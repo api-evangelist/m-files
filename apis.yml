@@ -1,8 +1,26 @@
 aid: m-files
 name: M-Files
-description: 'M-Files is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  M-Files is a metadata-driven document and information management platform that connects
+  documents to their business context, turning disconnected files into connected, trusted
+  information. It provides AI-powered document management with built-in governance, workflow
+  and document automation, and compliance, and integrates deeply with Microsoft 365. Trusted
+  by 6,000+ organizations, M-Files exposes developer access through the M-Files Web Service
+  (MFWS) REST API, a COM/.NET API, and the UIX and Vault Application Framework (VAF)
+  extensibility frameworks. It was surfaced as a portfolio company of Partech.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.m-files.com/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/m-files/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +30,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Infrastructure Saas
-apis: []
+- Document Management
+- Information Management
+- Content Services
+- Workflow Automation
+- Compliance
+- Enterprise Content Management
+apis:
+- name: M-Files Web Service (MFWS) REST API
+  description: >-
+    JSON over HTTPS REST API for the M-Files information management platform. Served per
+    M-Files Server / Cloud vault under a /REST/ base path; supports objects, files, vaults,
+    views, value lists, and search using standard GET/POST/PUT/DELETE verbs. Authenticated
+    via an X-Authentication session token, OAuth 2.0 bearer, SSO, or pre-shared keys.
+  humanURL: https://developer.m-files.com/APIs/REST-API/
+  properties:
+  - type: APIReference
+    url: https://developer.m-files.com/APIs/REST-API/Reference/
+  - type: Authentication
+    url: authentication/m-files-authentication.yml
+  - type: Conventions
+    url: conventions/m-files-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +63,56 @@ maintainers:
 common:
 - type: Website
   url: https://www.m-files.com/
+- type: DeveloperPortal
+  url: https://developer.m-files.com/
+- type: Documentation
+  url: https://developer.m-files.com/
+- type: APIReference
+  url: https://developer.m-files.com/APIs/REST-API/Reference/
+- type: GettingStarted
+  url: https://developer.m-files.com/Getting-Started/
+- type: Support
+  url: https://support.m-files.com/
+- type: Blog
+  url: https://www.m-files.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/m-files
+- type: Pricing
+  url: https://www.m-files.com/editions/
+- type: SignUp
+  url: https://www.m-files.com/try-m-files/
+- type: PrivacyPolicy
+  url: https://www.m-files.com/privacy-policy/
+- type: TrustCenter
+  url: https://www.m-files.com/about/trust-center/
+- type: Compliance
+  url: https://www.m-files.com/about/trust-center/
+- type: Packages
+  url: packages/m-files-packages.yml
+- type: SDKs
+  url: packages/m-files-packages.yml
+- type: Authentication
+  url: authentication/m-files-authentication.yml
+- type: Conventions
+  url: conventions/m-files-conventions.yml
+- type: Conformance
+  url: conformance/m-files-conformance.yml
+- type: Lifecycle
+  url: lifecycle/m-files-lifecycle.yml
+- type: DomainSecurity
+  url: security/m-files-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/m-files-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.m-files.com/about/trust-center/
+- type: TrustCenter
+  url: security/m-files-trust-center.yml
+- type: LLMsTxt
+  url: llms/m-files-llms.txt
+- type: WellKnown
+  url: well-known/m-files-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

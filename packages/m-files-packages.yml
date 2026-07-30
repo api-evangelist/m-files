@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/m-files
+notes: >-
+  M-Files publishes its client libraries as source in the official github.com/m-files
+  organization rather than to language package registries (npm/NuGet/PyPI). These are
+  first-party but positioned as samples/learning tools; test before production use.
+packages:
+  - language: csharp
+    registry: github
+    name: Libraries.MFWSClient
+    url: https://github.com/m-files/Libraries.MFWSClient
+    install: git clone https://github.com/m-files/Libraries.MFWSClient
+    official: true
+    description: Example .NET wrapper for the M-Files Web Service (MFWS) REST API.
+  - language: csharp
+    registry: github
+    name: MFilesSamplesAndLibraries
+    url: https://github.com/m-files/MFilesSamplesAndLibraries
+    install: git clone https://github.com/m-files/MFilesSamplesAndLibraries
+    official: true
+    description: Samples and libraries for building on the M-Files COM and REST APIs.
+  - language: csharp
+    registry: github
+    name: VAF.Extensions.Community
+    url: https://github.com/m-files/VAF.Extensions.Community
+    install: git clone https://github.com/m-files/VAF.Extensions.Community
+    official: true
+    description: Community extension methods for the Vault Application Framework (VAF).
+  - language: csharp
+    registry: github
+    name: COMAPI.Extensions.Community
+    url: https://github.com/m-files/COMAPI.Extensions.Community
+    install: git clone https://github.com/m-files/COMAPI.Extensions.Community
+    official: true
+    description: Extension methods for the M-Files COM API (.NET 4.6 / .NET Standard 2.0).
+  - language: typescript
+    registry: github
+    name: TypeScriptDefinitions
+    url: https://github.com/m-files/TypeScriptDefinitions
+    install: git clone https://github.com/m-files/TypeScriptDefinitions
+    official: true
+    description: TypeScript type definitions for M-Files UI Extensibility Framework (UIX).

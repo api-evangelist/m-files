@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.m-files.com/about/trust-center/
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: REST API supports OAuth 2.0 bearer tokens (Authorization header) per developer docs
+  - id: rest
+    conforms: true
+    evidence: MFWS is a JSON/HTTPS REST API using standard GET/POST/PUT/DELETE verbs
+  - id: iso-27001
+    conforms: true
+    evidence: ISO/IEC 27001 Information Security Management System certification (Trust Center)
+  - id: soc2
+    conforms: true
+    evidence: SOC 2 compliance stated in Trust Center
+  - id: gdpr
+    conforms: true
+    evidence: GDPR compliance stated in Trust Center and Privacy Policy
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are JSON but application/problem+json is not documented
+  - id: fhir-r4
+    conforms: false
+  - id: scim2
+    conforms: false

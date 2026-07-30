@@ -1,0 +1,56 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.m-files.com/APIs/REST-API/Authentication/
+docs: https://developer.m-files.com/APIs/REST-API/Authentication/
+notes: >-
+  The M-Files Web Service (MFWS) REST API is hosted per M-Files Server (on-prem or
+  M-Files Cloud vault), so endpoints are relative to the customer's Web Access root
+  (e.g. /REST/...). Authentication is session/token based rather than a fixed public
+  OAuth server; OAuth bearer is supported where the vault is configured for it.
+summary:
+  types: [oauth2, apiKey, http]
+  api_key_in: [header]
+  api_key_header: X-Authentication
+  oauth2_flows: [authorizationCode]
+schemes:
+  - name: AuthenticationToken
+    type: apiKey
+    in: header
+    header: X-Authentication
+    obtain: POST /REST/server/authenticationtokens
+    description: >-
+      Recommended method. POST username, password, and vault GUID (in braces) to
+      /REST/server/authenticationtokens; the JSON response returns a token value
+      passed on every subsequent request via the X-Authentication header. Optional
+      Expiration (ISO 8601) and SessionID. A 403 indicates an expired token.
+  - name: OAuth2Bearer
+    type: oauth2
+    scheme: bearer
+    description: >-
+      OAuth 2.0 access token passed as Authorization: Bearer <access-token>. Used
+      when the vault / M-Files Server is configured with an OAuth identity provider
+      (e.g. Azure AD / Microsoft Entra ID).
+  - name: HttpHeaderCredentials
+    type: apiKey
+    in: header
+    header: X-Username
+    description: >-
+      Not recommended. Credentials passed directly as X-Username, X-Password, and
+      X-Vault headers on each request.
+  - name: CookieSession
+    type: http
+    scheme: cookie
+    description: >-
+      ASP.NET session cookie returned after authentication, typically used for
+      single sign-on scenarios; preserve cookies for Multi-Server Mode stickiness.
+  - name: SingleSignOn
+    type: oauth2
+    description: >-
+      Single Sign-On (SSO) against the configured identity provider; see
+      https://developer.m-files.com/APIs/REST-API/Authentication/Single-Sign-On/
+  - name: PreSharedKeys
+    type: apiKey
+    in: header
+    description: >-
+      Pre-shared key authentication; see
+      https://developer.m-files.com/APIs/REST-API/Authentication/Pre-Shared-Keys/

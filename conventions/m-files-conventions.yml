@@ -1,0 +1,54 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.m-files.com/APIs/REST-API/
+docs: https://developer.m-files.com/APIs/REST-API/
+authentication:
+  style: token-header
+  header: X-Authentication
+  also: [oauth2-bearer, cookie-session, http-header-credentials]
+  ref: authentication/m-files-authentication.yml
+transport:
+  base_path: /REST/
+  note: >-
+    Endpoints are relative to the M-Files Web Access root on the customer's M-Files
+    Server or Cloud vault (e.g. https://<vault>.cloudvault.m-files.com/REST/...). If
+    Web Access is installed under a subdirectory the prefix changes (e.g. /MFiles/REST/).
+    On older IIS versions endpoints may require a trailing .aspx.
+http_methods:
+  verbs: [GET, POST, PUT, DELETE]
+  method_override:
+    supported: true
+    mechanism: querystring
+    param: _method
+    note: >-
+      For maximum IIS compatibility, PUT and DELETE may be issued as POST with a
+      ?_method=PUT or ?_method=DELETE querystring parameter.
+content_type:
+  request: application/json
+  response: application/json
+idempotency:
+  supported: false
+  note: >-
+    M-Files does not document a dedicated idempotency-key header for the MFWS REST API.
+pagination:
+  documented: false
+  note: >-
+    List/search operations support server-side filtering and result limiting via
+    query parameters (e.g. search conditions); a uniform cursor/offset pagination
+    contract is not documented as a cross-cutting convention.
+error_handling:
+  format: json
+  note: >-
+    Errors are returned as JSON with an HTTP status code; a 403 on an authenticated
+    request typically indicates an expired authentication token.
+resources:
+  - objects
+  - files
+  - vaults
+  - views
+  - value-lists
+  - search
+cross_links:
+  authentication: authentication/m-files-authentication.yml
+  conformance: conformance/m-files-conformance.yml
+  lifecycle: lifecycle/m-files-lifecycle.yml

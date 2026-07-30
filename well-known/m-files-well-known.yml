@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://{www,developer,product}.m-files.com/.well-known/*
+notes: >-
+  No /.well-known/ discovery documents are published on the M-Files public hosts. The
+  MFWS REST API is served per-customer from each M-Files Server / Cloud vault, so any
+  discovery surface would live on the customer vault host, not a central public host.
+hosts:
+  - host: https://www.m-files.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://developer.m-files.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://product.m-files.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}

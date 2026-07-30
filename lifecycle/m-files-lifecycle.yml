@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.m-files.com/APIs/REST-API/
+versioning:
+  scheme: server-version-decoupled
+  docs: https://developer.m-files.com/APIs/REST-API/
+  note: >-
+    Unlike the COM/.NET API (which must match the M-Files Server version), the M-Files
+    Web Service (MFWS) REST API is not tied to a specific M-Files Server version and is
+    reachable over HTTPS from any HTTP-capable environment.
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+notes: >-
+  No dedicated public API status page, RFC 8594 Sunset/Deprecation header policy, or
+  dated REST-API changelog was found on the developer portal at enrichment time.

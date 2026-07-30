@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.m-files.com/about/trust-center/
+url: https://www.m-files.com/about/trust-center/
+certifications:
+  - ISO/IEC 27001
+  - SOC 2
+  - GDPR
+evidence:
+  - source: https://www.m-files.com/about/trust-center/
+    keywords: [iso 27001, soc 2, gdpr, information security management system, trust center]
+notes: >-
+  M-Files operates an ISO- and SOC-certified Quality and Information Security
+  Management System. Microsoft Solutions Partner (Azure) designation also noted.

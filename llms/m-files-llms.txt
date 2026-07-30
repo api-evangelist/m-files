@@ -1,0 +1,39 @@
+# M-Files
+
+> M-Files is a metadata-driven document and information management platform that connects
+> documents to business context. It provides AI-powered document management with built-in
+> governance, automation, and compliance, integrates deeply with Microsoft 365, and is used
+> by 6,000+ organizations. Developers integrate via the M-Files Web Service (MFWS) REST API,
+> the COM/.NET API, and the UIX and Vault Application Framework (VAF) extensibility frameworks.
+
+## APIs
+
+- [M-Files Web Service (MFWS) REST API](https://developer.m-files.com/APIs/REST-API/): JSON/HTTPS REST API served per M-Files Server / Cloud vault under /REST/.
+- [REST API Reference](https://developer.m-files.com/APIs/REST-API/Reference/): Endpoint reference.
+- [COM/.NET API](https://developer.m-files.com/APIs/COM-API/): Comprehensive user + administrative API for Windows.
+
+## Docs
+
+- [Developer Portal](https://developer.m-files.com/): Entry point for all M-Files developer resources.
+- [Getting Started](https://developer.m-files.com/Getting-Started/): Onboarding guide.
+- [Authentication](https://developer.m-files.com/APIs/REST-API/Authentication/): Token (X-Authentication), OAuth 2.0 bearer, SSO, pre-shared keys.
+- [Samples and Libraries](https://developer.m-files.com/Samples-And-Libraries/): First-party sample libraries.
+
+## Frameworks
+
+- [User Interface Extensibility Framework (UIX)](https://developer.m-files.com/Frameworks/User-Interface-Extensibility-Framework/): Client-side UI customization.
+- [Vault Application Framework (VAF)](https://developer.m-files.com/Frameworks/Vault-Application-Framework/): Server-side .NET applications.
+
+## Packages
+
+- [Libraries.MFWSClient (.NET)](https://github.com/m-files/Libraries.MFWSClient): Example .NET wrapper for the MFWS REST API.
+- [MFilesSamplesAndLibraries (.NET)](https://github.com/m-files/MFilesSamplesAndLibraries): Samples and libraries for COM + REST APIs.
+- [GitHub Organization](https://github.com/m-files): All official M-Files open-source repositories.
+
+## Company
+
+- [Website](https://www.m-files.com/): Product and company site.
+- [Trust Center](https://www.m-files.com/about/trust-center/): ISO/IEC 27001, SOC 2, GDPR.
+- [Pricing / Editions](https://www.m-files.com/editions/): Plans and editions.
+- [Blog](https://www.m-files.com/blog/): Company blog.
+- [Support](https://support.m-files.com/): Support portal.

@@ -8,6 +8,17 @@ description: >-
   by 6,000+ organizations, M-Files exposes developer access through the M-Files Web Service
   (MFWS) REST API, a COM/.NET API, and the UIX and Vault Application Framework (VAF)
   extensibility frameworks. It was surfaced as a portfolio company of Partech.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve

@@ -45,10 +45,10 @@ modified: '2026-07-20'
 tags:
 - Company
 - Infrastructure Saas
-- Document-Management
+- Document Management
 - Information Management
 - Content Services
-- Workflow-Automation
+- Workflow Automation
 - Compliance
 - Enterprise Content Management
 tags_raw:
@@ -60,6 +60,8 @@ tags_raw:
 - Workflow Automation
 - Compliance
 - Enterprise Content Management
+- Document-Management
+- Workflow-Automation
 apis:
 - name: M-Files Web Service (MFWS) REST API
   description: >-
